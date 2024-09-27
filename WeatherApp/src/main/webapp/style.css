@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #8fb6d0, #d3e0ea); /* Soft pastel colors */
+}
+
+.mainContainer {
+  width: 25rem;
+  height: auto;
+  border-radius: 1rem;
+  background: #f8f9fa; /* Subtle off-white */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 10px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: all 0.3s ease;
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  background-color: #edf2f7; /* Light background for input area */
+}
+
+.searchInput input {
+  width: 85%;
+  height: 2.5rem;
+  outline: none;
+  font-size: 1rem;
+  color: #495057;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1.5rem;
+  border: 1px solid #adb5bd;
+  background-color: #e9ecef; /* Soft grey for input */
+}
+
+.searchInput input:focus {
+  border-color: #8fb6d0; /* Soft blue border */
+}
+
+.searchInput button {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  color: #6c757d;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa; /* Button matching container */
+  border: 1px solid #adb5bd;
+}
+
+.searchInput button:hover {
+  background-color: #8fb6d0; /* Soft blue on hover */
+  color: white;
+}
+
+.weatherIcon {
+  display: flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  width: 7rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.weatherDetails {
+  text-align: center;
+}
+
+.weatherDetails h2 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-top: 0.5rem;
+}
+
+.cityDetails {
+  color: #495057;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cityDetails .date {
+  font-size: 1.2rem;
+  color: #868e96;
+  margin-top: 0.3rem;
+}
+
+.windDetails {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.windDetails div {
+  text-align: center;
+  color: #495057;
+}
+
+.windDetails img {
+  max-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.humidity h2,
+.wind h2 {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+  color: #495057;
+}
